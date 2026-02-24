@@ -1,4 +1,4 @@
-# Frontend Architecture (Simple)
+# Frontend Architecture
 
 ## 1) High-Level Setup
 
@@ -60,7 +60,7 @@ flowchart TB
   - `/products`
   - `/products/[id]`
   - `/cart`
-- PDP uses dynamic route param (`id`)
+- Product Dispaly Page uses dynamic route param (`id`)
 
 ## 6) Performance Strategy
 
