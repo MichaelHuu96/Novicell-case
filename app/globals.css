@@ -401,6 +401,12 @@ a {
   line-height: 1.45;
 }
 
+.product-detail-rating {
+  margin: -0.35rem 0 1rem;
+  font-size: 0.95rem;
+  color: #334155;
+}
+
 .product-detail-button {
   border: none;
   background: #57c168;

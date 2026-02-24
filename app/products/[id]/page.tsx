@@ -39,6 +39,9 @@ export default async function ProductDetailPage({
           <div className="product-detail-content">
             <h1 className="product-detail-title">{product.title}</h1>
             <p className="product-detail-description">{product.description}</p>
+            <p className="product-detail-rating">
+              Rating: {product.rating.rate.toFixed(1)} / 5 ({product.rating.count} reviews)
+            </p>
             <AddToCartButton className="product-detail-button" product={product} />
           </div>
         </section>
