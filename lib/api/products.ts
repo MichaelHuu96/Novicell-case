@@ -21,3 +21,9 @@ export async function getProducts(): Promise<Product[]> {
 export async function getProductById(id: number): Promise<Product> {
   return fetchFromApi<Product>(`/products/${id}`);
 }
+
+export async function getProductsByCategory(category: string): Promise<Product[]> {
+  return fetchFromApi<Product[]>(
+    `/products/category/${encodeURIComponent(category)}`,
+  );
+}
