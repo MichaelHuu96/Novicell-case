@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# InfinityElectronics Frontend Case
 
-## Getting Started
+Frontend implementation for the Novicell case: modern e-commerce SPA experience using headless API data from Fake Store.
 
-First, run the development server:
+## Tech Stack
+
+- Next.js (App Router)
+- TypeScript
+- React Context for cart state
+- Plain CSS (`app/globals.css`)
+
+## Run Locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open: `http://localhost:3000`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Implemented Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Frontpage with hero and featured products
+- Product listing page:
+  - category filter
+  - sorting
+  - pagination
+- Product detail page:
+  - product details
+  - rating and review count
+  - add to cart
+  - similar products section
+- Shopping cart:
+  - real-time cart updates
+  - quantity update and remove item
+  - checkout form flow (frontend mock)
+- Responsive header/footer with required links and social links
 
-## Learn More
+## Data Source
 
-To learn more about Next.js, take a look at the following resources:
+- Fake Store API docs: https://fakestoreapi.com/docs
+- Products: https://fakestoreapi.com/products
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Documentation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Architecture: `Docs/Architechture.md`
+- Architecture PDF: `Docs/Architechture.pdf`
+- Components: `Docs/Components.md`
+- Performance and Accessibility notes: `Docs/Performance-Accessibility.md`
+- Submission checklist: `Docs/Submission-Checklist.md`
 
-## Deploy on Vercel
+## Notes / Tradeoffs
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Some backend-dependent features are mocked/stubbed for case scope (for example, checkout completion and product variants data shape).
+- Focus was on reusable component design, route structure, and clear state boundaries between server data and client cart state.
