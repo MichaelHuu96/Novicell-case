@@ -1,7 +1,7 @@
 import { CartProvider } from "@/components/cart/CartProvider";
-import { Footer } from "@/components/layout/Footer";
+import { Footer } from "@/components/library/layout/Footer";
 import type { Metadata } from "next";
-import { Header } from "@/components/layout/Header";
+import { Header } from "@/components/library/layout/Header";
 import "./globals.css";
 
 export const metadata: Metadata = {

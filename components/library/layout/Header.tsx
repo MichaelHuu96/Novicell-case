@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CartIndicator } from "@/components/layout/CartIndicator";
+import { CartIndicator } from "@/components/library/layout/CartIndicator";
 
 const navigationItems = [
   { label: "Home", href: "/" },
